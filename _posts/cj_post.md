@@ -3,7 +3,7 @@ layout: post
 title: "Celebrity Jeopardy"
 summary: "Jeopardy style Alexa trivia skill, about pop culture."
 # author: xplor4r
-# date: "2020-10-25 1:35:23 +0530"
+date: "2020-10-25 1:35:23 +0530"
 category: Alexa
 thumbnail: /assets/img/posts/code.jpg
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes, multi author
