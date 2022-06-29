@@ -8,74 +8,72 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
-    - text: Home
-      url: /
-    - text: About
-      url: /about
-    # - text: Blog
-    #   url: /blog
-    # - text: Gallery
-    #   url: /gallery
-    # - text: Shop
-    #   url : /shop
-    # - text: Contact
-    #   url : /contact
-
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  # - text: Blog
+  #   url: /blog
+  # - text: Gallery
+  #   url: /gallery
+  # - text: Shop
+  #   url : /shop
+  # - text: Contact
+  #   url : /contact
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile_pic.jpg
 author: DJ Dawkins
-author_bio: 
-            hi my name is dj :D <br>
-            Passionate individual who enjoys expressing their creativity through data analysis and problem solving.
-            Currently working as a business analyst who doubles as a data analyst
+author_bio: hi my name is dj :D <br>
+  Passionate individual who enjoys expressing their creativity through data analysis and problem solving.
+  Currently working as a business analyst who doubles as a data analyst
 author_email: "ddawkns@gmail.com"
 author_location: United States
 # author_website_url: "https://sujaykundu.com"
 typewrite-text: i love tay janoski and baby wes.... and slate dog!
-hero_cover_img:  cactus_landscape_dim.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+hero_cover_img: cactus_landscape_dim.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Intel
-              company_logo: intel_logo.png
-              # company_url: https://google.com
-              designation: Strategic Business Analyst
-              description: Manage long range plans for a network of high volume factories
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: false
+  - company_name: Intel
+    company_logo: intel_logo.png
+    # company_url: https://google.com
+    designation: Strategic Business Analyst
+    description: Manage long range plans for a network of high volume factories
+    visibility: true
+  - company_name: Microsoft
+    company_logo: microsoft.png
+    company_url: https://microsoft.com
+    designation: Azure Developer
+    description: Worked on various Azure Cloud Products
+    visibility: false
 
 # Education
 author_education_details:
-              - college_logo: smu_logo.png
-                college_name: Southern Methodist University
-                college_url: https://datascience.smu.edu/m
-                college_degree: Data Scientist
-                description: Master of Data Science
-                visibility: true
+  - college_logo: smu_logo.png
+    college_name: Southern Methodist University
+    college_url: https://datascience.smu.edu/m
+    college_degree: Data Scientist
+    description: Master of Data Science
+    visibility: true
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+  - project_thumbnail: gamershub.png
+    project_title: Gamers Hub
+    project_description: A Platform built for Gamers and Game Devs
+    project_url: https://gamershub.in
+    visibility: true
+  - project_thumbnail: hack4r.PNG
+    project_title: Hack4r
+    project_description: A Platform built for Hackers and Penetration Testers
+    project_url: https://hack4r.com
+    visibility: true
 
 # social links
 # twitter_username: johndoe
-github_username:  djdawkins
+github_username: djdawkins
 # facebook_username: johndoe
 linkedin_username: djdawkins
 # behance_username: johndoe
@@ -88,10 +86,10 @@ linkedin_username: djdawkins
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
 # disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
+hyvor_talk_website_id:
 
 # wakatime username (coding activity)
-wakatime_username: 
+wakatime_username:
 
 # mailchimp embedded form url (newsletter):
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
@@ -142,21 +140,18 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "gallery"
     values:
       permalink: /:path/:basename:output_ext
-  -
-    scope:
+  - scope:
       path: ""
       type: authors
     values:
       layout: author
       permalink: /blog/authors/:slug
-  -
-    scope:
-      path: 'assets/**'
+  - scope:
+      path: "assets/**"
     values:
       sitemap: false
 
@@ -177,7 +172,6 @@ jekyll_admin:
   #   - datafiles
   #   - configuration
   homepage: "posts"
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -228,6 +222,5 @@ exclude:
   - assets/bower_components/lightgallery/test/lightgallery.html
   - assets/bower_components/masonry-layout/README.md
   - assets/bower_components/imagesloaded/README.md
-
 
 destination: ./build
