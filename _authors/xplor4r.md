@@ -1,6 +1,6 @@
 ---
 name: DJ Dawkins
-username: djdawkins
+username: xplor4r
 bio: "Full Stack Web Developer, based in Bangalore, India"
 site: https://sujaykundu.com
 avatar: xplor4r.png
