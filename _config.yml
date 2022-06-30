@@ -53,7 +53,7 @@ author_work_experiences:
 author_education_details:
   - college_logo: smu_logo.png
     college_name: Southern Methodist University
-    college_url: https://datascience.smu.edu/m
+    college_url: https://datascience.smu.edu/
     college_degree: Data Scientist
     description: Master of Data Science
     visibility: true
