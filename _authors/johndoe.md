@@ -1,10 +1,10 @@
 ---
-name: John Doe
-username: johndoe
+name: DJ Dawkins
+username: djdawkins
 bio: "Hi I a John, a Web Developer and Designer."
 site: http://johndoe.com
 avatar: johndoe.png
-email: mail@johndoe.com
+email: ddawkns@gmail.com
 social:
     - title: "github"
       url: "https://github.com/johndoe"
