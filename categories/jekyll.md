@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Alexa
-permalink: /blog/categories/alexa/
+permalink: /blog/categories/Alexa/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
