@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jekyll
-permalink: /blog/categories/jekyll/
+title: Alexa
+permalink: /blog/categories/alexa/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
