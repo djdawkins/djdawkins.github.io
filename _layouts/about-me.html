@@ -163,12 +163,12 @@ layout: default
       {% endif %} {% endfor %}
     </div>
     {% endif %} {% if site.show_author_education_details == true %}
-    <div class="card">
+    <div id="author_work" class="card">
       <h1 class="card-title">Education</h1>
       <br />
       {% for detail in site.author_education_details %} {% if detail.visibility
       == true %}
-      <div class="row">
+      <div class="row" id="work-card">
         <div class="col-md-6">
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}"
@@ -179,7 +179,7 @@ layout: default
           <h4 class="experience-title">{{detail.college_degree }}</h4>
           <h6 class="experience-info">{{detail.college_name}}</h6>
           <p class="experience-desc">{{detail.description}}</p>
-          <p><a href="{{detail.college_url}}">{{ detail.college_url}}</a></p>
+          <p><a class="work-link" href="{{detail.college_url}}">{{ detail.college_url}}</a></p>
         </div>
       </div>
       {% endif %} {% endfor %}
