@@ -60,12 +60,12 @@ author_education_details:
 
 # Projects
 author_project_details:
-  - project_thumbnail: gamershub.png
+  - project_thumbnail: CelebJeopardyIconBorderless.png
     project_title: Celebrity Jeopardy
     project_description: Jeopardy style Alexa trivia skill, about pop culture.
     project_url: https://www.amazon.com/huckIt-Celebrity-Jeopardy/dp/B08DN837L9
     visibility: true
-  - project_thumbnail: hack4r.PNG
+  - project_thumbnail: hotelroomlogo.gif
     project_title: Hotel Chatroom
     project_description: Created a web app for a musical artist to interact with fans.
     project_url: https://hotelchatroom.com/
