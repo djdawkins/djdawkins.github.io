@@ -1,6 +1,6 @@
 ---
-name: Sujay Kundu
-username: xplor4r
+name: DJ Dawkins
+username: djdawkins
 bio: "Full Stack Web Developer, based in Bangalore, India"
 site: https://sujaykundu.com
 avatar: xplor4r.png
