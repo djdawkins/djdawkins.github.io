@@ -68,7 +68,7 @@ author_project_details:
     visibility: true
   - project_thumbnail: hotelroomlogo.gif
     project_title: Hotel Chatroom
-    project_description: Created a web app for a musical artist to interact with fans.
+    project_description: Web app for a musical artist to interact with fans.
     project_url: https://hotelchatroom.com/
     visibility: true
 
