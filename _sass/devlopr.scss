@@ -621,6 +621,31 @@ header {
     padding-left: 50px !important;
 }
 
+/* Homepage project cards*/
+
+#work-card{
+    margin: 0px !important;
+}
+#article{
+    margin-left: 35px !important;
+    margin-top: 20px !important;
+}
+.work_thumbnail{
+    text-align: center;
+}
+.work-img{
+    width:150px;
+    height:100px;
+}
+.work_details{
+    padding: 10px;
+}
+.work_links {
+    margin: 4px;
+    padding-top: 32px;
+    padding-left: 50px !important;
+}
+
 // #blog-posts-container{
 //     margin-left:20px !important;
 // }
@@ -718,10 +743,17 @@ header {
     }
 }
 
-
-.company-logo {
-    width: 100px;
-    height: 100px;
+#author_work {
+    .company-logo {
+        width: 225px;
+        height: 200px;
+    }
+    #work-card{
+        margin-top:30px;
+    }
+    .work-link{
+        color: var(--link-color);
+    }
 }
 
 .author-profile-img {
