@@ -74,6 +74,11 @@ author_project_details:
     project_description: Web app for a musical artist to interact with fans.
     project_url: https://hotelchatroom.com/
     visibility: true
+  - project_thumbnail: nba_logo.jpg
+    project_title: NBA Top Scout
+    project_description: Predict college basketball players future value in the NBA players.
+    project_url: https://ddawkinssmu.shinyapps.io/NbaTopScoutApp/?_ga=2.137218160.1526411196.1658889156-160510041.1658889156
+    visibility: true
 
 # social links
 # twitter_username: johndoe
