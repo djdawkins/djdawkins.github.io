@@ -69,6 +69,11 @@ author_project_details:
     project_description: Jeopardy style Alexa trivia skill, about pop culture.
     project_url: https://www.amazon.com/huckIt-Celebrity-Jeopardy/dp/B08DN837L9
     visibility: true
+  - project_thumbnail: classmate_logo.png
+    project_title: ClassMate
+    project_description: Essay Feedback Application that leverages machine learning to improve the grading process for high school and middle school teachers and students.
+    project_url: https://classmate-nlp-app.herokuapp.com/
+    visibility: true
   - project_thumbnail: hotelroomlogo.gif
     project_title: Hotel Chatroom
     project_description: Web app for a musical artist to interact with fans.
