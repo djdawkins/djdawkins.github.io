@@ -44,13 +44,13 @@ author_work_experiences:
     company_logo: carters_logo.png
     # company_url: https://google.com
     designation: Data Scientist
-    description: Pricing Strategy Team
+    description: (2023-Present) Pricing Strategy Team
     visibility: true
   - company_name: Intel
     company_logo: intel_logo.png
     # company_url: https://google.com
     designation: Strategic Business Analyst
-    description: Manage long range plans for a network of high volume factories
+    description: (2017-2023) Manage long range plans for a network of high volume factories
     visibility: true
 
 # Education
