@@ -41,7 +41,7 @@ hero_cover_img: cactus_landscape_dim.jpg # replace this for changing homepage co
 # Experiences
 author_work_experiences:
   - company_name: Carter
-    # company_logo: carters_logo.png
+    company_logo: carters_logo.png
     # company_url: https://google.com
     designation: Data Scientist
     description: Pricing Strategy Team
