@@ -40,18 +40,18 @@ hero_cover_img: cactus_landscape_dim.jpg # replace this for changing homepage co
 
 # Experiences
 author_work_experiences:
+  - company_name: Carter
+    # company_logo: carters_logo.png
+    # company_url: https://google.com
+    designation: Data Scientist
+    description: Pricing Strategy Team
+    visibility: true
   - company_name: Intel
     company_logo: intel_logo.png
     # company_url: https://google.com
     designation: Strategic Business Analyst
     description: Manage long range plans for a network of high volume factories
     visibility: true
-  - company_name: Microsoft
-    company_logo: microsoft.png
-    company_url: https://microsoft.com
-    designation: Azure Developer
-    description: Worked on various Azure Cloud Products
-    visibility: false
 
 # Education
 author_education_details:
@@ -72,7 +72,7 @@ author_project_details:
   - project_thumbnail: classmate_logo.png
     project_title: ClassMate
     project_description: Essay Feedback Application that leverages machine learning to improve the grading process for high school and middle school teachers and students.
-    project_url: https://classmate-nlp-app.herokuapp.com/
+    project_url: https://classmate-nlp-app-5978c5bfdc07.herokuapp.com/
     visibility: true
   - project_thumbnail: hotelroomlogo.gif
     project_title: Hotel Chatroom
