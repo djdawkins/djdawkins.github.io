@@ -1,56 +1,63 @@
 title: dj dawkins
-subtitle: Data Scientist
-description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+subtitle: AI Engineer
+description: >-
+  Portfolio of DJ Dawkins, an AI Engineer building agentic systems, LLM
+  applications, evaluation infrastructure, and intelligent automation.
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://djdawkins.github.io"
+baseurl: ""
 
 # Navigation
 urls:
   - text: Home
     url: /
+  - text: Experience
+    url: /experience/
+  - text: Projects
+    url: /projects/
+  - text: Writing
+    url: /writing/
   - text: About
-    url: /about
-  # - text: Blog
-  #   url: /blog
-  # - text: Gallery
-  #   url: /gallery
-  # - text: Shop
-  #   url : /shop
-  # - text: Contact
-  #   url : /contact
+    url: /about/
 
-# Edit Author details (For multi authors check _data/authors.yml)
-
+# Author details
 author_logo: profile_pic.jpg
 author: DJ Dawkins
-author_bio: Hi my name is DJ.
+author_bio: >-
+  AI Engineer at Flock Safety in the Atlanta metropolitan area.
   <br><br>
-  I love to take on a challenge and learn new things. 
-  I am a business minded individual with 6+ years of experience as a Data Scientist and Business Analyst.
-  My passion is working with both the business and technical experts to deliver quality solutions.
+  I design, build, evaluate, and operate AI-powered applications, agentic
+  workflows, and intelligent automation systems—with an emphasis on reliable
+  architecture, measurable business value, and clear capability boundaries.
   <br><br>
-  Feel free to reach out to me on Linkedin or via email!
+  My background spans data science, industrial engineering, pricing,
+  forecasting, and manufacturing planning.
+  <br><br>
+  <a href="https://docs.google.com/document/d/1EoK2eOTvaE4J6RvxsnrpY1OzShc155tr7U2Md9mCcls/edit?usp=sharing">Resume</a>
 author_email: "ddawkns@gmail.com"
-author_location: Chandler, AZ, United States
-# author_website_url: "https://sujaykundu.com"
-typewrite-text: welcome, to see my projects scroll down!
-hero_cover_img: cactus_landscape_dim.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+author_location: Atlanta Metropolitan Area, Georgia
+typewrite-text: Building intelligent systems that work beyond the prototype.
+hero_cover_img: cactus_landscape_dim.jpg
 
-# Experiences
+# Experience
 author_work_experiences:
-  - company_name: Carter
+  - company_name: Flock Safety
+    company_logo: flock_logo.png
+    company_url: https://www.flocksafety.com/
+    designation: AI Engineer
+    description: (March 2024–Present) Agentic systems, LLM applications, evaluation, and intelligent automation
+    visibility: true
+  - company_name: Carter's
     company_logo: carters_logo.png
-    # company_url: https://google.com
+    company_url: https://www.carters.com/
     designation: Data Scientist
-    description: (2023-Present) Pricing Strategy Team
+    description: (2023–2024) Pricing strategy, machine learning, and decision-support systems
     visibility: true
   - company_name: Intel
     company_logo: intel_logo.png
-    # company_url: https://google.com
-    designation: Strategic Business Analyst
-    description: (2017-2023) Manage long range plans for a network of high volume factories
+    company_url: https://www.intel.com/
+    designation: Senior Program Manager / Business Analyst
+    description: (2017–2023) Manufacturing capacity, capital planning, and analytical automation
     visibility: true
 
 # Education
@@ -58,33 +65,37 @@ author_education_details:
   - college_logo: smu_logo.png
     college_name: Southern Methodist University
     college_url: https://datascience.smu.edu/
-    college_degree: Data Scientist
-    description: Master of Data Science
+    college_degree: Master of Science in Data Science
+    description: Data science, machine learning, and applied analytics
     visibility: true
 
 # Projects
 author_project_details:
+  - project_thumbnail: slater_logo.webp
+    project_title: "Slater: Private, Voice-First AI Assistant"
+    project_description: Local-first assistant architecture with shared chat orchestration, capability boundaries, evaluation replay, voice, MCP, and explicit trust controls.
+    project_url: /projects/slater/
+    visibility: true
+  - project_thumbnail: agentic-workflows.svg
+    project_title: Agentic Software Engineering Automation
+    project_description: Human-governed coding-agent workflows for planning, repository modification, GitHub integration, and review-feedback processing.
+    project_url: /projects/agentic-software-engineering/
+    visibility: true
+  - project_thumbnail: request-triage.svg
+    project_title: AI Request Triage Agent
+    project_description: Evidence-grounded Python agent architecture for operational request analysis, structured resolution, tool use, evaluation, and escalation.
+    project_url: /projects/request-triage-agent/
+    visibility: true
   - project_thumbnail: CelebJeopardyIconBorderless.png
     project_title: Celebrity Jeopardy
-    project_description: Jeopardy style Alexa trivia skill, about pop culture.
-    project_url: https://www.amazon.com/huckIt-Celebrity-Jeopardy/dp/B08DN837L9
-    visibility: true
-  - project_thumbnail: classmate_logo.png
-    project_title: ClassMate
-    project_description: Essay Feedback Application that leverages machine learning to improve the grading process for high school and middle school teachers and students.
-    project_url: https://classmate-nlp-app-5978c5bfdc07.herokuapp.com/
-    visibility: true
-  - project_thumbnail: hotelroomlogo.gif
-    project_title: Hotel Chatroom
-    project_description: Web app for a musical artist to interact with fans.
-    project_url: https://hotelchatroom.com/
+    project_description: Alexa trivia skill demonstrating voice interaction design, intent handling, and consumer-facing conversational UX.
+    project_url: https://github.com/djdawkins/alexaVOICE_NUG
     visibility: true
   - project_thumbnail: nba_logo.jpg
     project_title: NBA Top Scout
-    project_description: Predict college basketball players future value in the NBA players.
-    project_url: https://ddawkinssmu.shinyapps.io/NbaTopScoutApp/?_ga=2.137218160.1526411196.1658889156-160510041.1658889156
+    project_description: Graduate analytics project modeling prospective NBA player value through predictive modeling and interactive decision support.
+    project_url: https://github.com/djdawkins/NbaBizAnalytics
     visibility: true
-
 # social links
 # twitter_username: johndoe
 github_username: djdawkins
@@ -105,16 +116,11 @@ hyvor_talk_website_id:
 # wakatime username (coding activity)
 wakatime_username:
 
-# mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
-
-# contact form - (choose formspress or getform)
-# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
-
-# releases - widget can be (sidebar, modal or embed)
-olvy_organization: devlopr
-olvy_widget_type: sidebar
+# Optional integrations are intentionally disabled.
+mailchimp_form_url:
+formspree_email:
+olvy_organization:
+olvy_widget_type:
 
 # syntax highlighter
 markdown: kramdown

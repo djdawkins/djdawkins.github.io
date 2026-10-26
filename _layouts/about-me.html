@@ -6,7 +6,7 @@ layout: default
   <div class="col-lg-4">
     <div class="card" id="profile-card">
       <a href="/">
-        <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" />
+        <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" alt="Portrait of {{ site.author | escape }}" />
       </a>
       <h1 class="profile-name">{{ site.title }}</h1>
       <p class="profile-bio">{{ site.subtitle }}</p>
@@ -123,6 +123,7 @@ layout: default
         <div class="col-md-6">
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}"
+            alt="{{ project.project_title | escape }}"
             class="project-img"
           />
         </div>
@@ -150,6 +151,7 @@ layout: default
         <div class="col-md-6">
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
+            alt="{{ exp.company_name | escape }} logo"
             class="company-logo"
           />
         </div>
@@ -172,6 +174,7 @@ layout: default
         <div class="col-md-6">
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}"
+            alt="{{ detail.college_name | escape }} logo"
             class="company-logo"
           />
         </div>
