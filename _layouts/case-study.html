@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<header class="case-hero shell">
+  <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
+  <p class="eyebrow">{{ page.eyebrow }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="case-deck">{{ page.intro }}</p>
+  <dl class="case-meta">
+    {% for item in page.meta %}
+      <div><dt>{{ item[0] }}</dt><dd>{{ item[1] }}</dd></div>
+    {% endfor %}
+  </dl>
+</header>
+<div class="case-layout shell">
+  <aside class="case-nav" aria-label="Case study sections">
+    <p>On this page</p>
+    <ol>
+      {% for item in page.sections %}
+        <li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+      {% endfor %}
+    </ol>
+  </aside>
+  <article class="prose case-content">
+    {{ content }}
+  </article>
+</div>
