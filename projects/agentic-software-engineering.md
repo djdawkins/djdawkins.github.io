@@ -1,31 +1,20 @@
 ---
-layout: case-study
+layout: page
 title: Agentic software engineering automation
-eyebrow: Flock Safety · Enterprise AI
-intro: A human-governed coding workflow that connects organizational context, engineering tools, repository changes, and review feedback without treating autonomous execution as the goal.
 permalink: /projects/agentic-software-engineering/
 description: Evidence-safe case study of DJ Dawkins' agentic software engineering automation work at Flock Safety.
-meta:
-  Role: AI Engineer
-  Status: Operational workflow
-  Domain: Developer productivity
-  Disclosure: Architecture-level only
-sections:
-  - id: problem
-    label: Problem
-  - id: role
-    label: Role
-  - id: architecture
-    label: Architecture
-  - id: decisions
-    label: Decisions
-  - id: challenges
-    label: Challenges
-  - id: outcomes
-    label: Outcomes
-  - id: lessons
-    label: Lessons
 ---
+# Agentic software engineering automation
+
+**Flock Safety · Enterprise AI · Operational workflow**
+
+A human-governed coding workflow connecting organizational context, engineering tools, repository changes, and review feedback without treating autonomous execution as the goal.
+
+**Role:** AI Engineer  
+**Domain:** Developer productivity  
+**Disclosure:** Architecture-level only
+
+[← All projects]({{ '/projects/' | relative_url }})
 ## Problem {#problem}
 
 Recurring engineering requests were slowed by the work around the code: locating business context, understanding repository conventions, decomposing ambiguous tasks, coordinating approvals, implementing changes, and responding to review feedback. The goal was not “let an agent code.” It was to shorten a governed engineering workflow while keeping humans in control of consequential decisions.
@@ -91,10 +80,7 @@ GitHub and code-review feedback remain the collaboration surface. The agent part
 
 The reviewed current resume reports that the workflow automated approximately **80% of recurring development work** and reduced typical request completion from **1–2 weeks to 2–3 days**.
 
-<div class="callout callout--boundary">
-  <h3>Measurement boundary</h3>
-  <p>These are internally reported outcomes summarized in the current resume. The underlying request cohort, measurement window, and proprietary operational data are not published. They should be treated as directional evidence, not a public benchmark.</p>
-</div>
+> **Measurement boundary:** These are internally reported outcomes summarized in the current resume. The underlying request cohort, measurement window, and proprietary operational data are not published. They should be treated as directional evidence, not a public benchmark.
 
 ## Lessons {#lessons}
 

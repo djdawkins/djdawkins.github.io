@@ -41,11 +41,11 @@ The repository is a lightly customized 2022-era `devlopr-jekyll` fork. The publi
 - Public GitHub repositories and current public project metadata.
 - Netflix Software Engineer 5 — Agent Platform posting as a competency reference, not a tailoring target.
 
-## Redesign opportunities
+## Content opportunities
 
 1. Lead with the working identity: AI Engineer building reliable intelligent systems beyond prototypes.
 2. Make Slater the flagship proof of architecture, orchestration, evaluation, security, and operations.
 3. Present Flock Safety work as evidence-safe system case studies: problem, contribution, system shape, controls, result, and confidentiality boundary.
 4. Map competencies to concrete decisions and evidence instead of a generic skills cloud.
 5. Retain only earlier work that demonstrates trajectory: voice interfaces, applied NLP, and predictive analytics.
-6. Replace the template with a small, first-party Jekyll system that GitHub Pages can build without a client framework.
+6. Preserve the existing theme while using its project cards and page layouts to surface current work.

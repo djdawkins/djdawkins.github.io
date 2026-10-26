@@ -1,50 +1,41 @@
 # DJ Dawkins — AI Engineering Portfolio
 
-Source for [djdawkins.github.io](https://djdawkins.github.io/).
+Personal portfolio hosted at [djdawkins.github.io](https://djdawkins.github.io/).
 
-A small Jekyll site presenting evidence-backed AI engineering case studies, professional experience, and technical writing. The redesign intentionally avoids a client framework, analytics, remote fonts, and the previous theme's unused ecommerce/CMS dependencies.
-
-## Architecture
-
-- Jekyll 4 with Markdown pages
-- Reusable layouts and includes in `_layouts/` and `_includes/`
-- One first-party stylesheet and a small mobile-navigation script
-- SVG architecture diagrams committed as static assets
-- GitHub Actions build and GitHub Pages deployment
-
-See [`docs/AUDIT.md`](docs/AUDIT.md) for the baseline audit, [`docs/DESIGN.md`](docs/DESIGN.md) for design decisions, and [`docs/REVIEW_NOTES.md`](docs/REVIEW_NOTES.md) for facts to confirm before merge.
+The site preserves the existing [`devlopr-jekyll`](https://github.com/sujaykundu777/devlopr-jekyll) theme while updating its content for current AI engineering work. Featured material includes Slater, agentic software engineering automation, AI request triage, professional experience, and selected earlier projects.
 
 ## Local development
 
-Prerequisites: Ruby 3.3 and Bundler.
+Requirements:
+
+- Ruby version from `.ruby-version`
+- Bundler
 
 ```bash
 bundle install
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve
 ```
 
-Open <http://127.0.0.1:4000/>.
+Open `http://127.0.0.1:4000/`.
 
-## Verification
+## Production build
 
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build
-bundle exec htmlproofer ./_site --disable-external --no-enforce-https
 ```
 
-The pull-request workflow runs both commands. It does **not** deploy pull requests. Deployment occurs only after a reviewed change reaches `master`.
+The configured output directory is `build/`.
 
-## Content accuracy
+## Content structure
 
-- Slater claims trace to the Phase 0 V2 architecture audit and supporting reports in the private project repository.
-- Professional case studies stay at an architecture level and omit proprietary source, internal data, and confidential workflow details.
-- Reported outcome metrics come from the current reviewed resume and are labeled with their measurement boundary.
-- Planned Slater capabilities are explicitly separated from implemented behavior.
+- `_config.yml` — identity, navigation, experience, education, social links, and homepage projects
+- `experience.md` — professional history and education
+- `projects/` — project index and technical case studies
+- `writing/` — completed engineering writing
+- `about.md` — entry point for the theme's profile layout
+- `assets/img/` — theme and project imagery
+- `docs/` — audit, content decisions, and facts requiring review
 
-## Editing
+## Deployment
 
-1. Update Markdown content or the reusable layout/include.
-2. Keep meaningful claims tied to a reviewed source.
-3. Never add credentials, internal addresses, camera locations, account information, enterprise data, or private source excerpts.
-4. Run the production build and generated-HTML check.
-5. Verify the rendered desktop and mobile surfaces before opening a pull request.
+The production site remains on GitHub Pages. Review changes through a pull request; do not merge or deploy without approval.

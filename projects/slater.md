@@ -1,37 +1,20 @@
 ---
-layout: case-study
+layout: page
 title: "Slater: a private, voice-first AI assistant"
-eyebrow: Flagship personal system · Independent engineering
-intro: A locally hosted assistant built to make household intelligence conversational without turning the model into the database, the authorization layer, or the deployment strategy.
 permalink: /projects/slater/
 description: Technical case study of Slater, DJ Dawkins' local-first AI assistant architecture, orchestration, evaluation, security, and evolution.
-meta:
-  Status: Implemented · evolving
-  Stack: TypeScript · React · Express
-  Inference: Local · RTX 5090 workstation
-  Interfaces: Web · Voice · MCP
-sections:
-  - id: problem
-    label: Problem
-  - id: architecture
-    label: Architecture
-  - id: decisions
-    label: Decisions
-  - id: orchestration
-    label: LLM infrastructure
-  - id: evaluation
-    label: Evaluation
-  - id: security
-    label: Security & deployment
-  - id: challenges
-    label: Challenges
-  - id: evolution
-    label: Evolution
-  - id: current
-    label: Current functionality
-  - id: roadmap
-    label: Roadmap
 ---
+# Slater: a private, voice-first AI assistant
+
+**Flagship personal system · Independent engineering · Implemented and evolving**
+
+A locally hosted assistant built to make household intelligence conversational without turning the model into the database, authorization layer, or deployment strategy.
+
+**Stack:** TypeScript · React · Express  
+**Inference:** Local · dedicated GPU workstation  
+**Interfaces:** Web · Voice · MCP
+
+[← All projects]({{ '/projects/' | relative_url }})
 ## The problem {#problem}
 
 Most assistants become fragile at the seams: one prompt accumulates every domain, tool access is implicit, transport logic forks the reasoning path, and a working development server is mistaken for an operable product. Slater began as a way to ask natural-language questions about household security and grew into a test bed for a harder question:
@@ -45,7 +28,7 @@ The product goal is private, useful interaction across web, voice, and machine c
 Slater runs across a dedicated local AI workstation and a separate household-services node. The AI workstation hosts local inference and one supervised application instance per environment. A household integration API provides server-side access to camera events, media, and structured services; credentials never enter the browser or model arguments.
 
 <figure class="diagram">
-  <img src="{{ '/assets/images/slater-architecture.svg' | relative_url }}" width="1080" height="620" alt="Architecture diagram showing three clients sharing one API and chat core, an authorized capability registry, local model gateway, owner-scoped SQLite storage, and a separate household integration API.">
+  <img src="{{ '/assets/images/slater-architecture.svg' | relative_url }}" style="max-width: 100%; height: auto;" alt="Architecture diagram showing three clients sharing one API and chat core, an authorized capability registry, local model gateway, owner-scoped SQLite storage, and a separate household integration API.">
   <figcaption>Current verified shape after Phase 0 V2. Dashed Finance and Health modules are contracts only; they are not registered capabilities.</figcaption>
 </figure>
 
@@ -81,7 +64,7 @@ Time windows, camera roster checks, source retrieval, card construction, and fut
 ## LLM and agent infrastructure {#orchestration}
 
 <figure class="diagram">
-  <img src="{{ '/assets/images/slater-request-flow.svg' | relative_url }}" width="1080" height="470" alt="Sequence diagram of authentication, conversation storage, capability resolution, prompt construction, local model inference, validated tool execution, and transport-specific response delivery.">
+  <img src="{{ '/assets/images/slater-request-flow.svg' | relative_url }}" style="max-width: 100%; height: auto;" alt="Sequence diagram of authentication, conversation storage, capability resolution, prompt construction, local model inference, validated tool execution, and transport-specific response delivery.">
   <figcaption>The subject comes from authenticated ingress. Model-generated arguments cannot change identity or the authorized tool menu.</figcaption>
 </figure>
 
@@ -93,11 +76,11 @@ Voice adds owner-scoped continuation and request idempotency around the same cor
 
 ## Evaluation and reliability {#evaluation}
 
-<div class="evidence-strip" aria-label="Verified Slater evidence">
-  <div><strong>413</strong><span>tests across 38 files</span></div>
-  <div><strong>19 / 19</strong><span>offline evaluation replay checks</span></div>
-  <div><strong>3</strong><span>transports sharing one core</span></div>
-</div>
+| Verified evidence | Result |
+|---|---:|
+| Tests | 413 across 38 files |
+| Offline evaluation replay checks | 19 / 19 |
+| Transports sharing one core | 3 |
 
 The evaluation harness runs frozen fixtures through the real chat core with a scripted model and no network. It asserts structural behavior—not only answer wording:
 
@@ -124,10 +107,7 @@ Slater is local-first by enforced default, not by marketing language.
 - Production and development have separate supervised processes, databases, credentials, cookies, origins, and instance markers.
 - Startup refuses unsafe combinations such as production auth bypass, a bypass on a public bind, a database marker mismatch, or two live writers.
 
-<div class="callout callout--boundary">
-  <h3>Privacy boundary</h3>
-  <p>Local-only inference is an enforced default, not a complete privacy guarantee. Conversations are not encrypted at rest; retention policy, data classification, per-read audit, and per-client MCP identity remain open work.</p>
-</div>
+> **Privacy boundary:** Local-only inference is an enforced default, not a complete privacy guarantee. Conversations are not encrypted at rest; retention policy, data classification, per-read audit, and per-client MCP identity remain open work.
 
 ## Technical challenges {#challenges}
 
@@ -158,10 +138,7 @@ The differentiator is not the number of integrations. It is the progression from
 
 ## Current functionality {#current}
 
-<div class="callout callout--verified">
-  <h3>Implemented and verified</h3>
-  <p>Saved web conversations; local text inference; Security context and three camera tools; source cards and authenticated media; iPhone voice requests; server-side conversation continuity; voice idempotency; MCP Security access; local model endpoint policy; production/development isolation; offline replay evaluation; typed capability outcomes.</p>
-</div>
+> **Implemented and verified:** Saved web conversations; local text inference; Security context and three camera tools; source cards and authenticated media; iPhone voice requests; server-side conversation continuity; voice idempotency; MCP Security access; local model endpoint policy; production/development isolation; offline replay evaluation; typed capability outcomes.
 
 **Explicitly not claimed:** conversational Finance or Health, persistent personal memory, proactive tasks, per-client MCP identity, comprehensive metrics/alerting, encrypted-at-rest conversations, or immutable artifact promotion. The phone Shortcut remains stateless; saved voice threads continue in the web UI.
 

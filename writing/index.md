@@ -6,8 +6,11 @@ intro: A publication surface for durable lessons from building agentic systems, 
 permalink: /writing/
 description: Engineering notes from DJ Dawkins on agent architecture, LLM evaluation, context, security, and local AI systems.
 ---
-## Published technical material
+# Engineering writing
 
+An extensible space for durable lessons from building agentic systems, evaluation infrastructure, and local AI. Only completed material is listed.
+
+## Technical material
 ### [Inside Slater's Phase 0 V2 architecture]({{ '/projects/slater/' | relative_url }})
 
 A case-study walkthrough of the decisions behind Slater's capability registry, context policy, evaluation harness, transport continuity, authorization boundaries, and environment isolation.

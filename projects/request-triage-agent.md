@@ -1,35 +1,20 @@
 ---
-layout: case-study
+layout: page
 title: AI request triage agent
-eyebrow: Flock Safety · Enterprise AI
-intro: An evidence-grounded agent for operational request analysis, structured resolution, tool orchestration, and explicit escalation—designed with a clear line between demonstrated behavior and production readiness.
 permalink: /projects/request-triage-agent/
 description: Evidence-safe case study of DJ Dawkins' operational AI request triage agent at Flock Safety.
-meta:
-  Role: AI Engineer
-  Runtime: Python
-  Status: Demonstrated workflow
-  Disclosure: Architecture-level only
-sections:
-  - id: problem
-    label: Problem
-  - id: role
-    label: Role
-  - id: architecture
-    label: Architecture
-  - id: grounding
-    label: Grounding & tools
-  - id: evaluation
-    label: Evaluation
-  - id: operations
-    label: Operations
-  - id: status
-    label: Status boundary
-  - id: outcomes
-    label: Outcomes
-  - id: lessons
-    label: Lessons
 ---
+# AI request triage agent
+
+**Flock Safety · Enterprise AI · Demonstrated workflow**
+
+An evidence-grounded agent for operational request analysis, structured resolution, tool orchestration, and explicit escalation—with a clear boundary between demonstrated behavior and production readiness.
+
+**Role:** AI Engineer  
+**Runtime:** Python  
+**Disclosure:** Architecture-level only
+
+[← All projects]({{ '/projects/' | relative_url }})
 ## Problem {#problem}
 
 Operational requests arrive with incomplete context, inconsistent language, and different levels of urgency. A person must identify the request type, gather evidence from enterprise systems, determine whether a known resolution applies, and route anything unresolved to the right stakeholder. Repeating that process delays response and consumes specialist time.
@@ -91,15 +76,9 @@ Deployment planning separates configuration from code, versions prompts and poli
 
 ## Demonstrated versus production-ready {#status}
 
-<div class="callout callout--verified">
-  <h3>Demonstrated</h3>
-  <p>Python agent execution, Slack-oriented intake, SQL-backed evidence retrieval, tool orchestration, query caching, structured outputs, configurable escalation, and an evaluation harness.</p>
-</div>
+> **Demonstrated:** Python agent execution, Slack-oriented intake, SQL-backed evidence retrieval, tool orchestration, query caching, structured outputs, configurable escalation, and an evaluation harness.
 
-<div class="callout callout--boundary">
-  <h3>Production-readiness work</h3>
-  <p>Long-running operational proof, alert thresholds, capacity behavior, broader failure drills, access review, and deployment controls require continued validation. This case study does not claim that proof-of-concept success alone establishes production maturity.</p>
-</div>
+> **Production-readiness work:** Long-running operational proof, alert thresholds, capacity behavior, broader failure drills, access review, and deployment controls require continued validation. This case study does not claim that proof-of-concept success alone establishes production maturity.
 
 ## Reported outcomes {#outcomes}
 
